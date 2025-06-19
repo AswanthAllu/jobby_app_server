@@ -1,9 +1,10 @@
+// server/controllers/authController.js
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
 // Generate JWT
-const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, {
+const generateToken = id => {
+  return jwt.sign({id}, process.env.JWT_SECRET, {
     expiresIn: '30d',
   });
 };
@@ -11,13 +12,13 @@ const generateToken = (id) => {
 // @desc    Register a new user
 // @route   POST /api/auth/register
 exports.registerUser = async (req, res) => {
-  const { name, email, password } = req.body;
+  const {name, email, password} = req.body;
 
   try {
-    const userExists = await User.findOne({ email });
+    const userExists = await User.findOne({email});
 
     if (userExists) {
-      return res.status(400).json({ message: 'User already exists' });
+      return res.status(400).json({message: 'User already exists'});
     }
 
     const user = await User.create({
@@ -34,31 +35,33 @@ exports.registerUser = async (req, res) => {
         token: generateToken(user._id),
       });
     } else {
-      res.status(400).json({ message: 'Invalid user data' });
+      res.status(400).json({message: 'Invalid user data'});
     }
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    // --- THIS IS THE IMPORTANT CHANGE ---
+    console.error('REGISTER ERROR:', error); // Log the actual error
+    res.status(500).json({message: 'Server Error'});
   }
 };
 
 // @desc    Auth user & get token (Login)
 // @route   POST /api/auth/login
 exports.loginUser = async (req, res) => {
-  const { username, password } = req.body; // Frontend sends 'username', let's treat it as email
+  const {username, password} = req.body;
 
   try {
-    const user = await User.findOne({ email: username });
+    const user = await User.findOne({email: username});
 
     if (user && (await user.matchPassword(password))) {
       res.json({
-        // The frontend expects a 'jwt_token' key
         jwt_token: generateToken(user._id),
       });
     } else {
-      // The frontend expects an 'error_msg' key
-      res.status(401).json({ error_msg: 'Invalid username or password' });
+      res.status(401).json({error_msg: 'Invalid username or password'});
     }
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    // --- THIS IS THE IMPORTANT CHANGE ---
+    console.error('LOGIN ERROR:', error); // Log the actual error
+    res.status(500).json({message: 'Server Error'});
   }
 };
