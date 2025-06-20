@@ -1,41 +1,157 @@
 [
   {
-    "title": "Software Engineer",
-    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/facebook-img.png",
-    "companyWebsiteUrl": "https://www.facebook.com/careers/",
-    "rating": 4.5,
+    "title": "SDE Intern",
+    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
+    "companyWebsiteUrl": "https://www.amazon.jobs/",
+    "rating": 4.6,
     "location": "Hyderabad",
-    "employmentType": "Full Time",
-    "packagePerAnnum": "25 LPA",
-    "jobDescription": "We are looking for a talented Software Engineer to join our team. You will be responsible for developing and maintaining our web applications.",
+    "employmentType": "Internship",
+    "packagePerAnnum": "80,000 /month stipend",
+    "jobDescription": "Join our Summer Internship program to work on real-world projects. You will be paired with a mentor and contribute to the development of Amazon's services, gaining invaluable hands-on experience.",
     "skills": [
-      { "name": "HTML 5", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/html-img.png" },
-      { "name": "CSS 3", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/css-img.png" },
-      { "name": "JavaScript", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/javascript-img.png" },
-      { "name": "React JS", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/reactjs-img.png" }
+      { "name": "Java", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/java-img.png" },
+      { "name": "Data Structures", "imageUrl": "https://cdn-icons-png.flaticon.com/512/344/344389.png" },
+      { "name": "Algorithms", "imageUrl": "https://cdn-icons-png.flaticon.com/512/138/138339.png" }
     ],
     "lifeAtCompany": {
-      "description": "Our company culture is built on a foundation of collaboration, innovation, and respect. We believe in empowering our employees to do their best work.",
-      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-facebook.png"
+      "description": "Our internships are a gateway to a fulfilling career. We value new perspectives and encourage our interns to be bold, innovative, and customer-obsessed.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-amazon.png"
     }
   },
   {
-    "title": "Devops Engineer",
-    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/google-img.png",
-    "companyWebsiteUrl": "https://careers.google.com/",
-    "rating": 4.8,
-    "location": "Bangalore",
+    "title": "Data Scientist",
+    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/netflix-img.png",
+    "companyWebsiteUrl": "https://jobs.netflix.com/",
+    "rating": 4.6,
+    "location": "Mumbai",
     "employmentType": "Full Time",
-    "packagePerAnnum": "30 LPA",
-    "jobDescription": "As a DevOps Engineer, you will work with a team of engineers to build and maintain our infrastructure. You will be responsible for automating our build and deployment processes.",
+    "packagePerAnnum": "42 LPA",
+    "jobDescription": "As a Data Scientist, you will analyze large datasets to uncover trends, build predictive models, and personalize the user experience. Your work will directly influence content acquisition and product features.",
     "skills": [
-      { "name": "Docker", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/docker-img.png" },
-      { "name": "Kubernetes", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/kubernetes-img.png" },
-      { "name": "Python", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/python-img.png" }
+      { "name": "Python", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/python-img.png" },
+      { "name": "R", "imageUrl": "https://www.vectorlogo.zone/logos/r-project/r-project-icon.svg" },
+      { "name": "SQL", "imageUrl": "https://www.svgrepo.com/show/331760/sql-database-generic.svg" },
+      { "name": "Machine Learning", "imageUrl": "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" }
     ],
     "lifeAtCompany": {
-      "description": "At Google, we believe that a happy and healthy work environment is essential for success. We offer a variety of benefits and perks to our employees.",
-      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-google.png"
+      "description": "We believe in freedom and responsibility. Our unique culture allows you to do your best work in a stunningly talented team, with a shared goal of entertaining the world.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-netflix.png"
+    }
+  },
+  {
+    "title": "Part-Time UI/UX Designer",
+    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/zomato-img.png",
+    "companyWebsiteUrl": "https://www.zomato.com/careers",
+    "rating": 4.1,
+    "location": "Gurgaon",
+    "employmentType": "Part Time",
+    "packagePerAnnum": "12 LPA",
+    "jobDescription": "We are seeking a creative UI/UX Designer to work part-time on our mobile and web platforms. You will be responsible for creating wireframes, mockups, and prototypes that lead to intuitive user experiences.",
+    "skills": [
+      { "name": "Figma", "imageUrl": "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" },
+      { "name": "Adobe XD", "imageUrl": "https://www.vectorlogo.zone/logos/adobe_xd/adobe_xd-icon.svg" },
+      { "name": "User Research", "imageUrl": "https://cdn-icons-png.flaticon.com/512/1087/1087828.png" }
+    ],
+    "lifeAtCompany": {
+      "description": "Life at Zomato is a whirlwind of passion, learning, and food. We are a diverse group of people who are obsessed with making dining a more convenient and enjoyable experience.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-zomato.png"
+    }
+  },
+  {
+    "title": "Lead Product Manager",
+    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
+    "companyWebsiteUrl": "https://www.adobe.com/careers.html",
+    "rating": 4.5,
+    "location": "Noida",
+    "employmentType": "Full Time",
+    "packagePerAnnum": "48 LPA",
+    "jobDescription": "Drive the product vision and strategy for our creative cloud services. You will lead a team of product managers, work closely with engineering and marketing, and define the roadmap for next-generation creative tools.",
+    "skills": [
+      { "name": "Product Roadmap", "imageUrl": "https://cdn-icons-png.flaticon.com/512/2921/2921829.png" },
+      { "name": "Agile Methodologies", "imageUrl": "https://www.svgrepo.com/show/303344/agile-icon.svg" },
+      { "name": "JIRA", "imageUrl": "https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg" }
+    ],
+    "lifeAtCompany": {
+      "description": "At Adobe, creativity is in our DNA. We empower our employees to create digital experiences that change the world, supported by a culture of integrity, innovation, and inclusion.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-adobe.png"
+    }
+  },
+  {
+    "title": "Freelance Content Writer",
+    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/swiggy-img.png",
+    "companyWebsiteUrl": "https://careers.swiggy.com/",
+    "rating": 4.0,
+    "location": "Remote",
+    "employmentType": "Freelance",
+    "packagePerAnnum": "15 LPA",
+    "jobDescription": "We are looking for a dynamic freelance writer to create engaging content for our blog, social media, and marketing campaigns. You must have a knack for storytelling and an understanding of the food and tech industry.",
+    "skills": [
+      { "name": "Content Writing", "imageUrl": "https://cdn-icons-png.flaticon.com/512/2533/2533103.png" },
+      { "name": "SEO", "imageUrl": "https://www.svgrepo.com/show/181072/seo.svg" },
+      { "name": "English Proficiency", "imageUrl": "https://cdn-icons-png.flaticon.com/512/197/197374.png" }
+    ],
+    "lifeAtCompany": {
+      "description": "Join a fast-paced, innovative environment where your work makes a real impact. We value speed, operational excellence, and a customer-first approach in everything we do.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-swiggy.png"
+    }
+  },
+  {
+    "title": "Backend Developer (Node.js)",
+    "companyLogoUrl": "https://www.vectorlogo.zone/logos/goldmansachs/goldmansachs-ar21.svg",
+    "companyWebsiteUrl": "https://www.salesforce.com/company/careers/",
+    "rating": 4.3,
+    "location": "Pune",
+    "employmentType": "Full Time",
+    "packagePerAnnum": "28 LPA",
+    "jobDescription": "Develop and maintain server-side logic for our CRM platform. You will be responsible for building robust and scalable APIs, integrating with third-party services, and ensuring high performance.",
+    "skills": [
+      { "name": "Node.js", "imageUrl": "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" },
+      { "name": "Express.js", "imageUrl": "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" },
+      { "name": "MongoDB", "imageUrl": "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" },
+      { "name": "REST APIs", "imageUrl": "https://www.svgrepo.com/show/373450/api.svg" }
+    ],
+    "lifeAtCompany": {
+      "description": "Our culture is built around the Hawaiian concept of Ohana, which means family. We work together, take care of each other, and have fun. We are committed to equality and giving back to our communities.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-salesforce.png"
+    }
+  },
+  {
+    "title": "Network Security Engineer",
+    "companyLogoUrl": "https://www.vectorlogo.zone/logos/cisco/cisco-icon.svg",
+    "companyWebsiteUrl": "https://www.cisco.com/c/en/us/about/careers.html",
+    "rating": 4.4,
+    "location": "Chennai",
+    "employmentType": "Full Time",
+    "packagePerAnnum": "35 LPA",
+    "jobDescription": "Protect our corporate network from security threats. You will be responsible for configuring and managing firewalls, intrusion detection systems, and VPNs, as well as responding to security incidents.",
+    "skills": [
+      { "name": "Firewalls", "imageUrl": "https://cdn-icons-png.flaticon.com/512/1096/1096322.png" },
+      { "name": "VPN", "imageUrl": "https://www.svgrepo.com/show/21122/vpn.svg" },
+      { "name": "Python", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/python-img.png" },
+      { "name": "Wireshark", "imageUrl": "https://www.vectorlogo.zone/logos/wireshark/wireshark-icon.svg" }
+    ],
+    "lifeAtCompany": {
+      "description": "At Cisco, we connect everything. Our employees are at the heart of our success, and we provide a supportive environment that encourages innovation, teamwork, and personal growth.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-cisco.png"
+    }
+  },
+  {
+    "title": "Financial Analyst Intern",
+    "companyLogoUrl": "https://www.vectorlogo.zone/logos/goldmansachs/goldmansachs-ar21.svg",
+    "companyWebsiteUrl": "https://www.goldmansachs.com/careers/",
+    "rating": 4.2,
+    "location": "Bangalore",
+    "employmentType": "Internship",
+    "packagePerAnnum": "1,00,000 /month stipend",
+    "jobDescription": "This internship offers an opportunity to work with our investment banking division. You will assist in financial modeling, valuation analysis, and the preparation of client presentations.",
+    "skills": [
+      { "name": "Excel", "imageUrl": "https://www.vectorlogo.zone/logos/microsoft_excel/microsoft_excel-icon.svg" },
+      { "name": "Financial Modeling", "imageUrl": "https://cdn-icons-png.flaticon.com/512/3135/3135661.png" },
+      { "name": "SQL", "imageUrl": "https://www.svgrepo.com/show/331760/sql-database-generic.svg" }
+    ],
+    "lifeAtCompany": {
+      "description": "Our firm is a place where you can make a difference. We are committed to fostering a diverse and inclusive workplace where all of our people can achieve their full potential.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-goldman-sachs.png"
     }
   }
 ]
