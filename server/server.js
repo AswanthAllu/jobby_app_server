@@ -14,10 +14,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-// NOTE: For local development, a simple cors() is fine.
-// The stricter one is for production deployment.
-app.use(cors()); 
-app.use(express.json()); // Body parser for JSON
+app.use(cors());
+app.use(express.json());
 
 // Database Connection
 mongoose
@@ -26,12 +24,12 @@ mongoose
   .catch(err => console.error('Error connecting to MongoDB:', err));
 
 // API Routes
-app.get('/', (req, res) => res.send('Jobby App API is running...')); // Test route
+app.get('/', (req, res) => res.send('Jobby App API is running...'));
 app.use('/api/auth', authRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/profile', profileRoutes);
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on port: ${PORT}`);
 });

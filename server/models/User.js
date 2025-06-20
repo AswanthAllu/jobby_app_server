@@ -1,28 +1,32 @@
+// server/models/User.js
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcryptjs'); // VERIFY THIS LINE IS CORRECT
 
 const UserSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
   shortBio: { type: String, default: 'A passionate developer.' },
-  profileImageUrl: { type: String, default: 'https://assets.ccbp.in/frontend/react-js/default-profile-img.png' }
+  profileImageUrl: { type: String, default: '/images/default-profile-img.png' },
+  role: {
+    type: String,
+    enum: ['student', 'admin'],
+    default: 'student',
+  },
 });
 
-// Middleware to hash password before saving
-UserSchema.pre('save', async function(next) {
+UserSchema.pre('save', async function (next) {
   if (!this.isModified('password')) {
     return next();
   }
-  const salt = await bcrypt.genSalt(10);
+  // This line will now work because the bcrypt object is complete
+  const salt = await bcrypt.genSalt(10); 
   this.password = await bcrypt.hash(this.password, salt);
   next();
 });
 
-// Method to compare entered password with hashed password
-UserSchema.methods.matchPassword = async function(enteredPassword) {
+UserSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
 
-const User = mongoose.model('User', UserSchema);
-module.exports = User;
+module.exports = mongoose.models.User || mongoose.model('User', UserSchema);
