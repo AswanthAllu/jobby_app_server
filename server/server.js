@@ -10,7 +10,7 @@ const jobRoutes = require('./routes/jobRoutes');
 const profileRoutes = require('./routes/profileRoutes');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // --- NEW: Production-ready CORS Configuration ---
 const allowedOrigins = [process.env.CORS_ORIGIN];
