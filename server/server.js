@@ -7,7 +7,6 @@ require('dotenv').config();
 // ... (Route Imports)
 const authRoutes = require('./routes/authRoutes');
 const jobRoutes = require('./routes/jobRoutes');
-const profileRoutes = require('./routes/profileRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -39,7 +38,6 @@ mongoose
 app.get('/', (req, res) => res.send('Jobby App API is running...'));
 app.use('/api/auth', authRoutes);
 app.use('/api/jobs', jobRoutes);
-app.use('/api/profile', profileRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
