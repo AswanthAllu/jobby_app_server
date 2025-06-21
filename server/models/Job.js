@@ -2,32 +2,33 @@
 const mongoose = require('mongoose');
 
 const SkillSchema = new mongoose.Schema({
-  name: String,
-  imageUrl: String,
+  name: { type: String, required: true },
 });
 
 const LifeAtCompanySchema = new mongoose.Schema({
-  description: String,
-  imageUrl: String,
+  description: { type: String, default: '' },
+  imageUrl: { type: String, default: '' },
 });
 
 const JobSchema = new mongoose.Schema(
   {
-    title: String,
-    companyLogoUrl: String,
-    companyWebsiteUrl: String,
-    rating: Number,
-    location: String,
-    employmentType: String,
-    packagePerAnnum: String,
-    jobDescription: String,
+    title: { type: String, required: true },
+    companyLogoUrl: { type: String, default: '' },
+    companyWebsiteUrl: { type: String, default: '' },
+    rating: { type: Number, default: 0 },
+    location: { type: String, required: true },
+    employmentType: { type: String, required: true },
+    packagePerAnnum: { type: String, default: '' },
+    jobDescription: { type: String, required: true },
     skills: [SkillSchema],
-    lifeAtCompany: LifeAtCompanySchema,
+    lifeAtCompany: {
+      type: LifeAtCompanySchema,
+      default: () => ({}), // Provide a default empty object
+    },
   },
   {
     timestamps: true,
   },
 );
 
-const Job = mongoose.model('Job', JobSchema);
-module.exports = Job;
+module.exports = mongoose.models.Job || mongoose.model('Job', JobSchema);

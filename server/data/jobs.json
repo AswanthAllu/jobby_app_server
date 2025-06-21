@@ -1,23 +1,5 @@
 [
-  {
-    "title": "SDE Intern",
-    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
-    "companyWebsiteUrl": "https://www.amazon.jobs/",
-    "rating": 4.6,
-    "location": "Hyderabad",
-    "employmentType": "Internship",
-    "packagePerAnnum": "80,000 /month stipend",
-    "jobDescription": "Join our Summer Internship program to work on real-world projects. You will be paired with a mentor and contribute to the development of Amazon's services, gaining invaluable hands-on experience.",
-    "skills": [
-      { "name": "Java", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/java-img.png" },
-      { "name": "Data Structures", "imageUrl": "https://cdn-icons-png.flaticon.com/512/344/344389.png" },
-      { "name": "Algorithms", "imageUrl": "https://cdn-icons-png.flaticon.com/512/138/138339.png" }
-    ],
-    "lifeAtCompany": {
-      "description": "Our internships are a gateway to a fulfilling career. We value new perspectives and encourage our interns to be bold, innovative, and customer-obsessed.",
-      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-amazon.png"
-    }
-  },
+ 
   {
     "title": "Data Scientist",
     "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/netflix-img.png",
@@ -55,6 +37,25 @@
     "lifeAtCompany": {
       "description": "Life at Zomato is a whirlwind of passion, learning, and food. We are a diverse group of people who are obsessed with making dining a more convenient and enjoyable experience.",
       "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-zomato.png"
+    }
+  },
+   {
+    "title": "SDE Intern",
+    "companyLogoUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/amazon-img.png",
+    "companyWebsiteUrl": "https://www.amazon.jobs/",
+    "rating": 4.6,
+    "location": "Hyderabad",
+    "employmentType": "Internship",
+    "packagePerAnnum": "80,000 /month stipend",
+    "jobDescription": "Join our Summer Internship program to work on real-world projects. You will be paired with a mentor and contribute to the development of Amazon's services, gaining invaluable hands-on experience.",
+    "skills": [
+      { "name": "Java", "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/java-img.png" },
+      { "name": "Data Structures", "imageUrl": "https://cdn-icons-png.flaticon.com/512/344/344389.png" },
+      { "name": "Algorithms", "imageUrl": "https://cdn-icons-png.flaticon.com/512/138/138339.png" }
+    ],
+    "lifeAtCompany": {
+      "description": "Our internships are a gateway to a fulfilling career. We value new perspectives and encourage our interns to be bold, innovative, and customer-obsessed.",
+      "imageUrl": "https://assets.ccbp.in/frontend/react-js/jobby-app/life-amazon.png"
     }
   },
   {
